@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffc2dd"/>
+      <stop offset=".5" stop-color="#bfe3ff"/>
+      <stop offset="1" stop-color="#bff0db"/>
+    </linearGradient>
+    <linearGradient id="cat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc078"/>
+      <stop offset="1" stop-color="#ff9a4d"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff3b0"/>
+      <stop offset="1" stop-color="#ffd93b"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- 太阳 -->
+  <g transform="translate(398,120)">
+    <g stroke="#ffd93b" stroke-width="13" stroke-linecap="round">
+      <line x1="0" y1="-56" x2="0" y2="-84"/>
+      <line x1="40" y1="-40" x2="60" y2="-60"/>
+      <line x1="56" y1="0" x2="84" y2="0"/>
+      <line x1="40" y1="40" x2="60" y2="60"/>
+    </g>
+    <circle r="46" fill="url(#sun)"/>
+  </g>
+
+  <!-- 耳朵 -->
+  <path d="M150 220 L188 122 L252 205 Z" fill="url(#cat)"/>
+  <path d="M362 220 L324 122 L260 205 Z" fill="url(#cat)"/>
+  <path d="M180 205 L198 152 L230 198 Z" fill="#ffb6c8"/>
+  <path d="M332 205 L314 152 L282 198 Z" fill="#ffb6c8"/>
+
+  <!-- 脸 -->
+  <circle cx="256" cy="302" r="150" fill="url(#cat)"/>
+
+  <!-- 腮红 -->
+  <circle cx="180" cy="332" r="30" fill="#ff7fa8" opacity=".55"/>
+  <circle cx="332" cy="332" r="30" fill="#ff7fa8" opacity=".55"/>
+
+  <!-- 眼睛 -->
+  <ellipse cx="208" cy="290" rx="19" ry="26" fill="#4a3b52"/>
+  <ellipse cx="304" cy="290" rx="19" ry="26" fill="#4a3b52"/>
+  <circle cx="215" cy="281" r="6.5" fill="#fff"/>
+  <circle cx="311" cy="281" r="6.5" fill="#fff"/>
+
+  <!-- 鼻子 -->
+  <path d="M242 320 L270 320 L256 336 Z" fill="#ff7fa8"/>
+  <!-- 嘴 -->
+  <path d="M256 336 q-16 18 -34 7 M256 336 q16 18 34 7" stroke="#4a3b52" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- 胡须 -->
+  <g stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9">
+    <line x1="150" y1="308" x2="96" y2="298"/>
+    <line x1="150" y1="328" x2="94" y2="330"/>
+    <line x1="362" y1="308" x2="416" y2="298"/>
+    <line x1="362" y1="328" x2="418" y2="330"/>
+  </g>
+</svg>
